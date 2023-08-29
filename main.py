@@ -1,3 +1,5 @@
+from string import capwords
+
 def main():
 
 # # f string format is recommended
@@ -111,22 +113,69 @@ def main():
 #     print(books + more_books)
 
 # The * operator, on the other hand, makes multiple copies of a given sequence.
-    books = ['Dracula', 'Frankenstein', 'The Omen', 'The Exorcist', 'The Legend of Sleepy Hollow']
+#     books = ['Dracula', 'Frankenstein', 'The Omen', 'The Exorcist', 'The Legend of Sleepy Hollow']
+#
+#     print(books * 2)
 
-    print(books * 2)
+# --------------------------------------------
+# String Operations
+# --------------------------------------------
+# capitalize() - capital first letter of a string
+#     country_name = 'bangladesh'
+#
+#     print(country_name.capitalize())
+
+# title() - capital first letter of each word (cannot deal with 's)
+#     book_name = 'the house of silk'
+#
+#     print(book_name.title())
+
+# capwords() - capital first letter of each word (can deal with 's)
+# need to import capwords from string
+
+    # book_name = "alice's adventures in wonderland"
+    #
+    # print(capwords(book_name))
+
+# istitle() method that can check whether a given string is in title case or not
+
+    # book_name = 'hearts in atlantis'
+    #
+    # print(f'Is "{book_name}" in title case? {book_name.istitle()}')
+    # print(f'Is "{book_name.title()}" in title case? {book_name.title().istitle()}')
+
+# How to count the number of Occurrences of a substring in a string
+#     paragraph = '''At three in the morning the chief Sussex detective, obeying the urgent call from Sergeant Wilson of
+#             Birlstone, arrived from headquarters in a light dog-cart behind a breathless trotter. By the five-forty train in
+#             the morning he had sent his message to Scotland Yard, and he was at the Birlstone station at twelve o'clock to
+#             welcome us. White Mason was a quiet, comfortable-looking person in a loose tweed suit, with a clean-shaved,
+#             ruddy face, a stoutish body, and powerful bandy legs adorned with gaiters, looking like a small farmer,
+#             a retired gamekeeper, or anything upon earth except a very favourable specimen of the provincial criminal
+#             officer.'''
+#
+#     substring = 'morning'
+#
+#     print(f'The substring "{substring}" shows up {paragraph.count(substring)} times in the paragraph.')
+
+# Split and Join Strings
+# split() split the string into words using the spaces as separators
+#     string = 'Holmes was certainly not a difficult man to live with'
+#
+#     word_list = string.split()
+#
+#     # print(word_list)
+# # join()
+#     new_string = ''
+#     new_string = new_string.join(word_list)
+#     print(new_string)
 
 
+# --------------------------------------------
+# Conditional Statements in Python
+# --------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
+    pass
 
 
 
