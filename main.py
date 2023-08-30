@@ -173,9 +173,47 @@ def main():
 # --------------------------------------------
 # Conditional Statements in Python
 # --------------------------------------------
+# if ... else
+#     number = int(input('what number would you like to check?\n- '))
+#
+#     if number % 2 == 0:
+#         print(f"{number} is even.")
+#     else:
+#         print(f"{number} is odd.")
+
+# if ... elif ... else
+
+    # year = int(input('which year would you like to check?\n- '))
+    #
+    # if year % 400 == 0 and year % 100 == 0:
+    #     print(f"{year} is leap year.")
+    # elif year % 4 == 0 and year % 100 != 0:
+    #     print(f"{year} is leap year.")
+    # else:
+    #     print(f"{year} is not leap year.")
 
 
-    pass
+# for ... else
+
+    number = int(input('what number would you like to check?\n- '))
+
+    if number == 1:
+        print(f"{number} is not a prime number.")
+    elif number > 1:
+        for n in range(2, number):
+            if (number % n) == 0:
+                print(f"{number} is not a prime number.")
+                break
+        else:
+            print(f"{number} is a prime number.")
+
+
+# --------------------------------------------
+# Relational and Logical Operators
+# --------------------------------------------
+
+
+
 
 
 
