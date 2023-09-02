@@ -195,27 +195,76 @@ def main():
 
 # for ... else
 
-    number = int(input('what number would you like to check?\n- '))
-
-    if number == 1:
-        print(f"{number} is not a prime number.")
-    elif number > 1:
-        for n in range(2, number):
-            if (number % n) == 0:
-                print(f"{number} is not a prime number.")
-                break
-        else:
-            print(f"{number} is a prime number.")
+    # number = int(input('what number would you like to check?\n- '))
+    #
+    # if number == 1:
+    #     print(f"{number} is not a prime number.")
+    # elif number > 1:
+    #     for n in range(2, number):
+    #         if (number % n) == 0:
+    #             print(f"{number} is not a prime number.")
+    #             break
+    #     else:
+    #         print(f"{number} is a prime number.")
 
 
 # --------------------------------------------
 # Relational and Logical Operators
 # --------------------------------------------
 
+#     shield = int(input('what is your shield level? '))
+#     sword = int(input('what is your sword level? '))
+#     armor = int(input('what is your armor level? '))
+#
+#     if shield >= 45 and sword >= 48 and armor >= 25:
+#         print('you shall pass!')
+#     else:
+#         print('you shall not pass!')
 
+# --------------------------------------------
+# Set
+# --------------------------------------------
 
+# set 显示类似 dict, 但是类型不一样
 
+    # numbers = {}
+    #
+    # print(type(numbers))
+    #
+    # numbers = set()
+    #
+    # print(type(numbers))
 
+# no duplicate value in set
+#     numbers_list = [1, 2, 3, 4, 5, 3, 2, 4]
+#
+#     print(numbers_list)
+#
+#     numbers_set = set(numbers_list)
+#
+#     print(numbers_set)
+
+# set are mutable, can add new value with add()
+#     numbers = {1, 2, 3, 4, 5}
+#
+#     numbers.add(500)
+#
+#     print(numbers)
+
+# discard() a value from set, clear() remove all values
+    numbers = {1, 2, 3, 4, 5}
+
+    numbers.discard(3)
+
+    print(numbers)
+
+    numbers.clear() # remove all value
+
+    print(numbers)
+
+# --------------------------------------------
+# Mapping Type in Python
+# --------------------------------------------
 
 
 # program entry point
