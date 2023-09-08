@@ -252,18 +252,50 @@ def main():
 #     print(numbers)
 
 # discard() a value from set, clear() remove all values
-    numbers = {1, 2, 3, 4, 5}
-
-    numbers.discard(3)
-
-    print(numbers)
-
-    numbers.clear() # remove all value
-
-    print(numbers)
+#     numbers = {1, 2, 3, 4, 5}
+#
+#     numbers.discard(3)
+#
+#     print(numbers)
+#
+#     numbers.clear() # remove all value
+#
+#     print(numbers)
 
 # --------------------------------------------
 # Mapping Type in Python
+# --------------------------------------------
+    programming_books = {
+        'C Programming Language': 35,
+        'Introduction to Algorithms': 100,
+        'Clean Code: A Handbook of Agile Software Craftsmanship': 50
+    }
+
+    # cpl = 'C Programming Language'
+    # algo = 'Introduction to Algorithms'
+    # # get() method in dictionary
+    # print(f"The price of {cpl} is ${programming_books.get(cpl)}")
+    # print(f"The price of {algo} is ${programming_books[algo]}")
+
+    # # popitem() :  popitem() method removes the last item in the dictionary and returns that as a tuple
+    # print(programming_books.popitem())
+    # # pop() method, on the other hand, returns the value for a given key and removes the pair
+    # key = 'C Programming Language'
+    # print(programming_books.pop(key))
+    # print(programming_books)
+
+    # keys(), values(), items()
+    # for key in programming_books.keys():
+    #     print(key)
+    #
+    # for value in programming_books.values():
+    #     print(value)
+    #
+    # for item in programming_books.items():
+    #     print(item)
+
+# --------------------------------------------
+# How to Write Functions in Python
 # --------------------------------------------
 
 
