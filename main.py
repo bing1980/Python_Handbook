@@ -1,6 +1,6 @@
 from string import capwords
 
-def main():
+# def main():
 
 # # f string format is recommended
 #     book, author, release_year, goodreads_rating = 'Dracula', 'Bram Stoker', 1897, 4.01
@@ -265,11 +265,11 @@ def main():
 # --------------------------------------------
 # Mapping Type in Python
 # --------------------------------------------
-    programming_books = {
-        'C Programming Language': 35,
-        'Introduction to Algorithms': 100,
-        'Clean Code: A Handbook of Agile Software Craftsmanship': 50
-    }
+#     programming_books = {
+#         'C Programming Language': 35,
+#         'Introduction to Algorithms': 100,
+#         'Clean Code: A Handbook of Agile Software Craftsmanship': 50
+#     }
 
     # cpl = 'C Programming Language'
     # algo = 'Introduction to Algorithms'
@@ -294,12 +294,86 @@ def main():
     # for item in programming_books.items():
     #     print(item)
 
+# program entry point
+# if __name__ == '__main__':
+#     main()
+
+
+####################################################################
 # --------------------------------------------
 # How to Write Functions in Python
 # --------------------------------------------
+# def hello(message, is_lower=False):
+#     if is_lower:
+#         return message.lower()
+#     else:
+#         return message.upper()
+#
+#
+# def main():
+#     uppercase_message = hello('Hello, Universe!')
+#     print(uppercase_message)
+#
+#     lowercase_message = hello('Hello, Universe!', True)
+#     print(lowercase_message)
+#
+#
+# if __name__ == '__main__':
+#     main()
+
+###################################
+# range based for loop
+# def natural_sum(last_number):
+#     if last_number < 1:
+#         return last_number
+#
+#     total = 0
+#     for number in range(1, last_number + 1):
+#         total += number
+#
+#     return total
+#
+#
+# def main():
+#     last_number = int(input('up to which number would you like to calculate the sum?\n- '))
+#
+#     print(natural_sum(last_number))
+#
+#########################################
+# recursive
+# def recursive_natural_sum(last_number):
+#     if last_number < 1:
+#         return last_number
+#
+#     return last_number + recursive_natural_sum(last_number - 1)
+#
+#
+# def main():
+#     last_number = int(input('up to which number would you like to calculate the sum?\n- '))
+#
+#     print(recursive_natural_sum(last_number))
+#
+#
+# if __name__ == '__main__':
+#     main()
 
 
-# program entry point
-if __name__ == '__main__':
-    main()
+# ----------------------------------------------------
+# How to Write Anonymous or Lambda Functions in Python
+# ----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
