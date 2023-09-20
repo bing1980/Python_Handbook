@@ -362,10 +362,59 @@ from string import capwords
 # How to Write Anonymous or Lambda Functions in Python
 # ----------------------------------------------------
 
+# def main():
+#     numbers = [1, 2, 5, 4, 7, 88, 12, 15, 55, 77, 95]
+#     # This lambda takes an argument named number then returns True if that's divisible by two and False otherwise
+#
+#     # The fileter() function takes a function and an iterable type as its two arguments.
+#     even_numbers = filter(lambda number: True if number % 2 == 0 else False, numbers)
+#
+#     print(list(even_numbers))
+#
+#
+# if __name__ == '__main__':
+#     main()
+
+# ----------------------------------------------------
+# *args and **kwargs in Python
+# ----------------------------------------------------
+# you can pass the numbers as a tuple, and not mandatory to name it as *args
+# def total(*numbers):
+#     print(type(numbers))
+#
+#     t = 0
+#     for number in numbers:
+#         t += number
+#
+#     return t
+#
+#
+# def main():
+#     print(total(1, 2, 3, 4, 5))
+#
+#
+# if __name__ == '__main__':
+#     main()
+
+# Like *args there is also **kwargs or keyword arguments that will allow you to access the function arguments as a dictionary.
+
+def items(**kwargs):
+    print(type(kwargs))
+
+    for key, value in kwargs.items():
+        print(f"{key} : {value}")
 
 
+def main():
+    items(
+        Apple=10,
+        Orange=8,
+        Grape=35
+    )
 
 
+if __name__ == '__main__':
+    main()
 
 
 
